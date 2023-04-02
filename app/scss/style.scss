@@ -1274,13 +1274,16 @@
 
         &-button-next,
         &-button-prev {
-            top: 68.7%;
-            font-size: 30px;
+            top: 69.2%;
+        }
+
+        &-button-next{
+            width: auto;
         }
 
         &-button-next::after,
         &-button-prev::after {
-            font-size: 30px;
+            font-size: 33px;
         }
     }
 }
