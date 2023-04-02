@@ -6,6 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Тестовое задание</title>
+    <link rel="icon" href="img/favicon.ico" sizes="any"> 
+    <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&family=Roboto:wght@400;700&display=swap"
@@ -26,6 +28,7 @@
                         <p class="header__info--left">100% эффективная формула</p>
                         <p class="header__info--right">Бесконтактная доставка по всей России</p>
                     </div>
+                    <p class="header__info--mobile">KETTOX® Комфортная замена кето диеты</p>
                 </div>
             </div>
         </header>
@@ -36,15 +39,15 @@
                     <img class="description__decor--small" src="img/decor-elipse.svg">
                     <div class="description__inner">
                         <div class="description__info">
-                            <h1 class="description__title">KETTOX – ЗАМЕНА КЕТО ДИЕТЫ И ПОХУДЕНИЕ БЕЗ МУЧЕНИЙ</h1>
+                            <h1 class="description__title">KETTOX<span class="description__copyright-icon">®</span> –
+                                ЗАМЕНА КЕТО ДИЕТЫ И ПОХУДЕНИЕ БЕЗ МУЧЕНИЙ</h1>
                             <p class="description__subtitle">С новым средством KETTOX можно сжечь до 17 кг жира, не
                                 прибегая
                                 к мучительной кето диете</p>
+                            <div class="description__img-box"><img class="description__img" src="img/kettox-img.png"
+                                    alt="Kettox"></div>
                             <div class="description__effect">
-                                <div>
-                                    <img src="img/capsule-img.png" alt="Капсула">
-                                </div>
-
+                                <img class="description__capsule-img" src="img/capsule-img.png" alt="Капсула">
                                 <ul class="description__list">
                                     <li class="description__item">
                                         Вызывает состояние “кетоза” с первого применения
@@ -61,44 +64,58 @@
                                 </ul>
                             </div>
                         </div>
-                        <img class="description__img" src="img/kettox-img.png" alt="Kettox">
+
                         <div class="description-form">
                             <h3 class="description-form__title">Акция действует только <br> на территории России и стран
                                 СНГ
                             </h3>
+                            <h3 class="description-form__title--mobile">Акция! Закажите KETTOX <br>прямо сейчас всего за
+                                147 руб.</h3>
                             <div class="description-form__price">
                                 <div class="description-form__oldprice">
                                     <p>Старая цена</p>
                                     <p>3889 руб</p>
                                 </div>
+                                <div class="description-form__oldprice--mobile">
+                                    <p>Старая цена:</p>
+                                    <p>3990 руб.</p>
+                                </div>
                                 <div class="description-form__newprice">
                                     <p>Новая цена</p>
                                     <p>142 руб</p>
                                 </div>
+                                <div class="description-form__newprice--mobile">
+                                    <p>Промо-цена:</p>
+                                    <p>147</p>
+                                </div>
                             </div>
 
                             <form class="description-form__form" method="post">
-                                <label for="name">Введите вашем имя</label>
+                                <label for="name">Введите ваше имя</label>
                                 <input class="description-form__input description-form__input--name" type="text"
                                     name="name" placeholder="Иванова И. И.">
                                 <label for="phone">Введите ваш телефон</label>
                                 <input class="description-form__input  description-form__input--phone" type="tel"
                                     name="phone" placeholder="+7 ХХХ ХХХ-ХХ-ХХ">
-                                <p>Осталось всего 5 приборов на российском складе! НЕ УПУСТИ СВОЙ ШАНС! </p>
+                                <p class="description-form__remainder">Осталось всего 5 приборов на российском складе!
+                                    НЕ УПУСТИ СВОЙ ШАНС! </p>
+                                <p class="description-form__remainder--mobile">Осталось упаковок со скидкой:
+                                    <span>48</span> шт.</p>
                                 <button class="description-form__button btn" type="submit">ЗАКАЗАТЬ KETTOX</button>
                             </form>
 
                             <div class="description-form__security">
-                                <img src="img/security-icon.svg" alt="">
+                                <img src="img/security-icon.svg">
                                 <span>Мы не разглашаем Ваши личные данные и не передаем оставленную Вами информацию
                                     третьим лицам. * При заказе курса</span>
                             </div>
+                            <p class="description-form__orders--mobile">Уже получили на этой неделе: 297 чел.</p>
                         </div>
                     </div>
 
                 </div>
             </section>
-
+            
             <section class="effect">
                 <div class="container">
                     <div class="effect__inner">
@@ -160,85 +177,89 @@
                             </div>
 
                             <ul class="composition__list">
-                                <li class="composition__item">
+                                <li class="composition__item composition__item--mango">
                                     <div class="composition__item-img">
-                                        <img src="img/mango-img.png" alt="Манго">
+                                        <img src="img/mango-img.png" alt="Африканское манго">
                                     </div>
-                                    <div>
+                                    <div class="composition__item-info--mango">
                                         <h4 class="composition__item-title">Африканское манго</h4>
-                                        <p class="composition__item-text">Поддерживает липидный обмен и нормализует сахар в крови</p>
+                                        <p class="composition__item-text">Поддерживает липидный обмен <br> и нормализует
+                                            сахар <br>в крови</p>
                                     </div>
                                 </li>
-                                <li class="composition__item">
+                                <li class="composition__item composition__item--gotu">
                                     <div class="composition__item-img">
-                                        <img src="img/mango-img.png" alt="Манго">
+                                        <img src="img/gotu-img.png" alt="Готу кола">
                                     </div>
-                                    <div>
-                                        <h4 class="composition__item-title">Африканское манго</h4>
-                                        <p class="composition__item-text">Поддерживает липидный обмен и нормализует сахар в крови</p>
+                                    <div class="composition__item-info--gotu">
+                                        <h4 class="composition__item-title">Готу кола</h4>
+                                        <p class="composition__item-text">Ускоряет <br>водно-солевой обмен, препятствует
+                                            образованию целлюлита</p>
                                     </div>
                                 </li>
-                                <li class="composition__item">
+                                <li class="composition__item composition__item--tamarind">
                                     <div class="composition__item-img">
-                                        <img src="img/mango-img.png" alt="Манго">
+                                        <img src="img/tamarind-img.png" alt="Тамаринд">
                                     </div>
-                                    <div>
-                                        <h4 class="composition__item-title">Африканское манго</h4>
-                                        <p class="composition__item-text">Поддерживает липидный обмен и нормализует сахар в крови</p>
+                                    <div class="composition__item-info--tamarind">
+                                        <h4 class="composition__item-title">Тамаринд</h4>
+                                        <p class="composition__item-text">Содержит природные альфа-кетоны, ускоряет
+                                            жиросжигание <br>и запускает кетоз</p>
                                     </div>
                                 </li>
-                                <li class="composition__item">
+                                <li class="composition__item composition__item--hudia">
                                     <div class="composition__item-img">
-                                        <img src="img/mango-img.png" alt="Манго">
+                                        <img src="img/hoodia-gordonii-img.png" alt="Худия гордони">
                                     </div>
-                                    <div>
-                                        <h4 class="composition__item-title">Африканское манго</h4>
-                                        <p class="composition__item-text">Поддерживает липидный обмен и нормализует сахар в крови</p>
+                                    <div class="composition__item-info--gordonii">
+                                        <h4 class="composition__item-title">Худия гордони</h4>
+                                        <p class="composition__item-text">Содержит алканы <br>и витамин Е, блокирует
+                                            чувство голода</p>
                                     </div>
                                 </li>
-                                <li class="composition__item">
+                                <li class="composition__item composition__item--asai">
                                     <div class="composition__item-img">
-                                        <img src="img/mango-img.png" alt="Манго">
+                                        <img src="img/asai.png" alt="Ягода асаи ">
                                     </div>
-                                    <div>
-                                        <h4 class="composition__item-title">Африканское манго</h4>
-                                        <p class="composition__item-text">Поддерживает липидный обмен и нормализует сахар в крови</p>
+                                    <div class="composition__item-info--asai">
+                                        <h4 class="composition__item-title">Ягода асаи</h4>
+                                        <p class="composition__item-text">Концентрат аминокислот <br>и микроэлементов,
+                                            улучшает состояние кожи, волос, ногтей</p>
                                     </div>
                                 </li>
-                                <li class="composition__item">
+                                <li class="composition__item composition__item--blueberry">
                                     <div class="composition__item-img">
-                                        <img src="img/mango-img.png" alt="Манго">
+                                        <img src="img/blueberry.png" alt="Канадская голубика">
                                     </div>
-                                    <div>
-                                        <h4 class="composition__item-title">Африканское манго</h4>
-                                        <p class="composition__item-text">Поддерживает липидный обмен и нормализует сахар в крови</p>
+                                    <div class="composition__item-info--blueberry">
+                                        <h4 class="composition__item-title">Канадская голубика</h4>
+                                        <p class="composition__item-text">эффективно проникает и расщепляет клетки
+                                            “жировых депо”</p>
                                     </div>
                                 </li>
                             </ul>
                         </div>
-
-                      
-
                     </div>
                 </div>
             </section>
         </main>
         <footer class="description footer">
             <div class="container description__container">
-                <img class="description__decor--big description__decor-footer--big" src="img/footer-decor-elipse.svg">
+                <img class="description__decor--big  description__decor-footer--big" src="img/footer-decor-elipse.svg">
                 <img class="description__decor--small description__decor-footer--small"
                     src="img/footer-decor-elipse.svg">
+                <img class="description__decor--small description__decor--mobile" src="img/decor-elipse.svg">
                 <div class="description__inner description__inner--footer">
                     <div class="description__info">
-                        <h2 class="description__title">KETTOX – ЗАМЕНА КЕТО ДИЕТЫ И ПОХУДЕНИЕ БЕЗ МУЧЕНИЙ</h2>
+                        <h1 class="description__title">KETTOX<span class="description__copyright-icon">®</span> – ЗАМЕНА
+                            КЕТО ДИЕТЫ И ПОХУДЕНИЕ БЕЗ МУЧЕНИЙ</h1>
                         <p class="description__subtitle">С новым средством KETTOX можно сжечь до 17 кг жира, не
                             прибегая
                             к мучительной кето диете</p>
+                        <div class="description__img-box"><img class="description__img description__img--footer"
+                                src="img/kettox-img.png" alt="Kettox"></div>
                         <div class="description__effect">
-                            <div>
-                                <img src="img/capsule-img.png" alt="Капсула">
-                            </div>
-
+                            <img class="description__capsule-img" src="img/capsule-img.png" alt="Капсула">
                             <ul class="description__list">
                                 <li class="description__item">
                                     Вызывает состояние “кетоза” с первого применения
@@ -255,46 +276,87 @@
                             </ul>
                         </div>
                     </div>
-                    <img class="description__img" src="img/kettox-img.png" alt="Kettox">
-                    <div class="description-form">
-                        <p class="description-form__title">Акция действует только <br> на территории России и стран
+
+                    <div class="description-form description-form--footer">
+                        <h3 class="description-form__title">Акция действует только <br> на территории России и стран
                             СНГ
-                        </p>
+                        </h3>
+                        <h3 class="description-form__title--mobile">Акция! Закажите KETTOX <br>прямо сейчас всего за 147
+                            руб.</h3>
                         <div class="description-form__price">
                             <div class="description-form__oldprice">
                                 <p>Старая цена</p>
                                 <p>3889 руб</p>
                             </div>
+                            <div class="description-form__oldprice--mobile">
+                                <p>Старая цена:</p>
+                                <p>3990 руб.</p>
+                            </div>
                             <div class="description-form__newprice">
                                 <p>Новая цена</p>
                                 <p>142 руб</p>
                             </div>
+                            <div class="description-form__newprice--mobile">
+                                <p>Промо-цена:</p>
+                                <p>147</p>
+                            </div>
                         </div>
 
                         <form class="description-form__form" method="post">
-                            <label for="name">Введите вашем имя</label>
+                            <label for="name">Введите ваше имя</label>
                             <input class="description-form__input description-form__input--name" type="text" name="name"
                                 placeholder="Иванова И. И.">
                             <label for="phone">Введите ваш телефон</label>
                             <input class="description-form__input  description-form__input--phone" type="tel"
                                 name="phone" placeholder="+7 ХХХ ХХХ-ХХ-ХХ">
-                            <p>Осталось всего 5 приборов на российском складе! НЕ УПУСТИ СВОЙ ШАНС! </p>
+                            <p class="description-form__remainder">Осталось всего 5 приборов на российском складе! НЕ
+                                УПУСТИ СВОЙ ШАНС! </p>
+                            <p class="description-form__remainder--mobile">Осталось упаковок со скидкой: <span>48</span>
+                                шт.</p>
                             <button class="description-form__button btn" type="submit">ЗАКАЗАТЬ KETTOX</button>
                         </form>
 
                         <div class="description-form__security">
-                            <img src="img/security-icon.svg" alt="">
+                            <img src="img/security-icon.svg">
                             <span>Мы не разглашаем Ваши личные данные и не передаем оставленную Вами информацию
                                 третьим лицам. * При заказе курса</span>
                         </div>
+                        <p class="description-form__orders--mobile">Уже получили на этой неделе: 297 чел.</p>
                     </div>
                 </div>
             </div>
         </footer>
     </div>
 
+    <div class="pop-up">
+        <div class="pop-up__inner">
+            <div class="pop-up__img">
+                <img src="img/popup-img.png" alt="Kettox">
+            </div>
+            <div class="pop-up__content">
+                <h3 class="pop-up__title">До конца акции:</h3>
 
+                <div class="pop-up__alert-text">
+                    <div class="pop-up__timer-hour">
+                        <p>04</p>
+                        <p>часов</p>
+                    </div>
+                    <div class="pop-up__timer-minute">
+                        <p>30</p>
+                        <p>минут</p>
+                    </div>
+                    <div class="pop-up__timer-second">
+                        <p>40</p>
+                        <p>секунд</p>
+                    </div>
+                </div>
+
+                <p>Успейте оформить заказ по промо-цене с доставкой в <span>%User_IP_GEO%"</span></p>
+            </div>
+        </div>
+    </div>
     <script defer src="js/main.min.js"></script>
 </body>
 
 </html>
+
