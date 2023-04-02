@@ -6,12 +6,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Тестовое задание</title>
-    <link rel="icon" href="img/favicon.ico" sizes="any"> 
+    <link rel="icon" href="img/favicon.ico" sizes="any">
     <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&family=Roboto:wght@400;700&display=swap"
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&family=Roboto:wght@400;500;700&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css">
     <link rel="stylesheet" href="css/style.min.css">
 </head>
 
@@ -35,8 +36,8 @@
         <main class="main">
             <section class="description">
                 <div class="container description__container">
-                    <img class="description__decor--big" src="img/decor-elipse.svg">
-                    <img class="description__decor--small" src="img/decor-elipse.svg">
+                    <img class="description__decor--big" src="img/decor-elipse.svg" alt="Декор">
+                    <img class="description__decor--small" src="img/decor-elipse.svg" alt="Декор">
                     <div class="description__inner">
                         <div class="description__info">
                             <h1 class="description__title">KETTOX<span class="description__copyright-icon">®</span> –
@@ -91,34 +92,36 @@
                             </div>
 
                             <form class="description-form__form" method="post">
-                                <label for="name">Введите ваше имя</label>
+                                <label>Введите ваше имя</label>
                                 <input class="description-form__input description-form__input--name" type="text"
-                                    name="name" placeholder="Иванова И. И.">
-                                <label for="phone">Введите ваш телефон</label>
+                                    placeholder="Иванова И. И.">
+                                <label>Введите ваш телефон</label>
                                 <input class="description-form__input  description-form__input--phone" type="tel"
-                                    name="phone" placeholder="+7 ХХХ ХХХ-ХХ-ХХ">
+                                    placeholder="+7 ХХХ ХХХ-ХХ-ХХ">
                                 <p class="description-form__remainder">Осталось всего 5 приборов на российском складе!
                                     НЕ УПУСТИ СВОЙ ШАНС! </p>
                                 <p class="description-form__remainder--mobile">Осталось упаковок со скидкой:
-                                    <span>48</span> шт.</p>
+                                    <span>48</span> шт.
+                                </p>
                                 <button class="description-form__button btn" type="submit">ЗАКАЗАТЬ KETTOX</button>
                             </form>
 
                             <div class="description-form__security">
-                                <img src="img/security-icon.svg">
+                                <img src="img/security-icon.svg" alt="Security">
                                 <span>Мы не разглашаем Ваши личные данные и не передаем оставленную Вами информацию
                                     третьим лицам. * При заказе курса</span>
                             </div>
-                            <p class="description-form__orders--mobile">Уже получили на этой неделе: 297 чел.</p>
+                            <p class="description-form__orders--mobile">Уже получили на этой неделе: <span>297</span>
+                                чел.</p>
                         </div>
                     </div>
 
                 </div>
             </section>
-            
+
             <section class="effect">
                 <div class="container">
-                    <div class="effect__inner">
+                    <div class="effect__inner" id="slider">
                         <h2 class="effect__title">Как быстро Вы похудеете с помощью KETTOX?</h2>
                         <div class="effect__stages">
                             <div class="effect__stage">
@@ -130,7 +133,7 @@
                                     <li class="effect__stage-item">Снижается аппетит, уходит чувство голода</li>
                                 </ul>
                                 <img class="effect__stage-img" src="img/stage-first.png" alt="Fat girl">
-                                <img class="effect__stage-decor" src="img/decor-rectangle.svg">
+                                <img class="effect__stage-decor" src="img/decor-rectangle.svg" alt="Декор">
                             </div>
                             <div class="effect__stage">
                                 <h3 class="effect__stage-title">3-4 НЕДЕЛЯ</h3>
@@ -140,7 +143,7 @@
                                     <li class="effect__stage-item">Ваш метаболизм возвращается в нормальный темп</li>
                                 </ul>
                                 <img class="effect__stage-img" src="img/stage-second.png" alt="Average body girl">
-                                <img class="effect__stage-decor" src="img/decor-rectangle.svg">
+                                <img class="effect__stage-decor" src="img/decor-rectangle.svg" alt="Декор">
                             </div>
                             <div class="effect__stage">
                                 <h3 class="effect__stage-title">5-6 НЕДЕЛЯ</h3>
@@ -151,9 +154,11 @@
                                     <li class="effect__stage-item">Вес стабилизируется, жир не накапливается</li>
                                 </ul>
                                 <img class="effect__stage-img" src="img/stage-third.png" alt="Lean girl">
-                                <img class="effect__stage-decor" src="img/decor-rectangle.svg">
+                                <img class="effect__stage-decor" src="img/decor-rectangle.svg" alt="Декор">
                             </div>
                         </div>
+                        <div class="effect__arrow-next swiper-button-next"></div>
+                        <div class="effect__arrow-prev swiper-button-prev"></div>
                     </div>
                 </div>
             </section>
@@ -173,7 +178,7 @@
                         </div>
                         <div class="composition__ellipse--big">
                             <div class="composition__ellipse--small">
-                                <img class="composition__capsule-img" src="img/capsule-img.png" alt="">
+                                <img class="composition__capsule-img" src="img/capsule-img.png" alt="Капсула">
                             </div>
 
                             <ul class="composition__list">
@@ -245,10 +250,12 @@
         </main>
         <footer class="description footer">
             <div class="container description__container">
-                <img class="description__decor--big  description__decor-footer--big" src="img/footer-decor-elipse.svg">
+                <img class="description__decor--big  description__decor-footer--big" src="img/footer-decor-elipse.svg"
+                    alt="Декор">
                 <img class="description__decor--small description__decor-footer--small"
-                    src="img/footer-decor-elipse.svg">
-                <img class="description__decor--small description__decor--mobile" src="img/decor-elipse.svg">
+                    src="img/footer-decor-elipse.svg" alt="Декор">
+                <img class="description__decor--small description__decor--mobile" src="img/decor-elipse.svg"
+                    alt="Декор">
                 <div class="description__inner description__inner--footer">
                     <div class="description__info">
                         <h1 class="description__title">KETTOX<span class="description__copyright-icon">®</span> – ЗАМЕНА
@@ -303,12 +310,12 @@
                         </div>
 
                         <form class="description-form__form" method="post">
-                            <label for="name">Введите ваше имя</label>
-                            <input class="description-form__input description-form__input--name" type="text" name="name"
+                            <label>Введите ваше имя</label>
+                            <input class="description-form__input description-form__input--name" type="text"
                                 placeholder="Иванова И. И.">
-                            <label for="phone">Введите ваш телефон</label>
+                            <label>Введите ваш телефон</label>
                             <input class="description-form__input  description-form__input--phone" type="tel"
-                                name="phone" placeholder="+7 ХХХ ХХХ-ХХ-ХХ">
+                                placeholder="+7 ХХХ ХХХ-ХХ-ХХ">
                             <p class="description-form__remainder">Осталось всего 5 приборов на российском складе! НЕ
                                 УПУСТИ СВОЙ ШАНС! </p>
                             <p class="description-form__remainder--mobile">Осталось упаковок со скидкой: <span>48</span>
@@ -317,11 +324,12 @@
                         </form>
 
                         <div class="description-form__security">
-                            <img src="img/security-icon.svg">
+                            <img src="img/security-icon.svg" alt="Security">
                             <span>Мы не разглашаем Ваши личные данные и не передаем оставленную Вами информацию
                                 третьим лицам. * При заказе курса</span>
                         </div>
-                        <p class="description-form__orders--mobile">Уже получили на этой неделе: 297 чел.</p>
+                        <p class="description-form__orders--mobile">Уже получили на этой неделе: <span>297</span> чел.
+                        </p>
                     </div>
                 </div>
             </div>
@@ -336,27 +344,80 @@
             <div class="pop-up__content">
                 <h3 class="pop-up__title">До конца акции:</h3>
 
-                <div class="pop-up__alert-text">
-                    <div class="pop-up__timer-hour">
-                        <p>04</p>
+                <div class="pop-up__timer">
+                    <div class="pop-up__timer-hours">
+                        <p id="hours">00</p>
                         <p>часов</p>
                     </div>
-                    <div class="pop-up__timer-minute">
-                        <p>30</p>
+                    <div class="pop-up__timer-minutes">
+                        <p id="minutes">00</p>
                         <p>минут</p>
                     </div>
-                    <div class="pop-up__timer-second">
-                        <p>40</p>
+                    <div class="pop-up__timer-seconds">
+                        <p id="seconds">00</p>
                         <p>секунд</p>
                     </div>
                 </div>
 
-                <p>Успейте оформить заказ по промо-цене с доставкой в <span>%User_IP_GEO%"</span></p>
+                <p class="pop-up__alert">Успейте оформить заказ по промо-цене с доставкой в <span>%User_IP_GEO%"</span>
+                </p>
+
+                <div class="pop-up__promoprice">
+                    Промо-цена:
+                    <p><span>142</span> руб</p>
+                </div>
+
+                <form class="description-form__form" method="post">
+                    <label>Введите ваше имя</label>
+                    <input class="description-form__input description-form__input--name" type="text"
+                        placeholder="Иванова И. И.">
+                    <label>Введите ваш телефон</label>
+                    <input class="description-form__input  description-form__input--phone" type="tel"
+                        placeholder="+7 ХХХ ХХХ-ХХ-ХХ">
+                    <button class="description-form__button btn" type="submit">ЗАКАЗАТЬ KETTOX</button>
+                </form>
+                <p class="pop-up__orders">Уже получили на этой неделе: <span>297</span> чел.</p>
             </div>
         </div>
     </div>
+
+    <div class="alert-modal">
+        <div class="alert-modal__inner">
+            <div class="alert-modal__close-icon">
+                <img src="img/close-icon.svg" alt="Иконка закрытия">
+            </div>
+            <img src="img/people-icon.svg" alt="people icon">
+            <div class="alert-modal__description">
+                <p>Количество посетителей на сайте:</p>
+                <p>172</p>
+            </div>
+        </div>
+    </div>
+    <div class="alert-modal">
+        <div class="alert-modal__inner">
+            <div class="alert-modal__close-icon">
+                <img src="img/close-icon.svg" alt="Иконка закрытия">
+            </div>
+            <img src="img/phone-icon.svg" alt="phone icon">
+            <div class="alert-modal__description">
+                <p>Ольга М. сделала заявку на обратный звонок</p>
+            </div>
+        </div>
+    </div>
+    <div class="alert-modal">
+        <div class="alert-modal__inner">
+            <div class="alert-modal__close-icon">
+                <img src="img/close-icon.svg" alt="Иконка закрытия">
+            </div>
+            <img src="img/trolley-icon.svg" alt="trolley icon">
+            <div class="alert-modal__description">
+                <p>Ольга М. только что совершила покупку на сумму 5 600 руб.</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
     <script defer src="js/main.min.js"></script>
 </body>
 
 </html>
-
