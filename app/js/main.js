@@ -79,9 +79,8 @@ const alertControler = () => {
     const alertModals = document.querySelectorAll(".alert-modal");
     const alertCloseBtns = document.querySelectorAll(".alert-modal__close-icon");
 
-
     function showRandomAlert() {
-        let total = Math.round(Math.random() * 2);
+        let total = Math.round(Math.random() * (alertModals.length - 1));
         alertModals[total].classList.add("alert-modal__active");
     }
 
